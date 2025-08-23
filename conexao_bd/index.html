@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cadastro-container">
+
+        <h2>Cadastro</h2>
+
+        <form action="conexao.php" method="post" id="form-cadastro">
+
+            <fieldset>
+                <legend>IDENTIFICAÇÃO</legend>
+                <input type="text" name="nome" placeholder="Nome" required> <br> <br>
+                <input type="text" name="cpf" placeholder="CPF" required>  <br> <br>
+                <label>DATA DE NASCIMENTO</label>  
+                <br>
+                <input type="date" name="data_de_nascimento" required title="Informe sua data de nascimento">
+            </fieldset>
+
+            <button type="submit" name="cadastrar">Cadastrar</button>
+
+        </form>
+
+    </div>
+
+   <div id="mensagem-feedback" style="margin-top: 20px; font-weight: bold;"></div>
+
+<script>
+    // Função para pegar parâmetros da URL (como 'status' e 'message')
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        // Retorna a string decodificada ou vazia se não encontrar
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Pega os parâmetros 'status' e 'message' da URL
+    var status = getUrlParameter('status');
+    var message = getUrlParameter('message');
+    var mensagemDiv = document.getElementById('mensagem-feedback');
+
+    // Se houver status e mensagem, exibe-os
+    if (status && message) {
+        mensagemDiv.textContent = message; // Define o texto da div
+        if (status === 'sucesso') {
+            mensagemDiv.style.color = 'green'; // Cor verde para sucesso
+        } else if (status === 'erro') {
+            mensagemDiv.style.color = 'red';   // Cor vermelha para erro
+        }
+        // Limpa os parâmetros da URL após exibir a mensagem (opcional, mas boa prática)
+        // Isso evita que a mensagem apareça novamente se o usuário recarregar a página
+        history.replaceState({}, document.title, window.location.pathname);
+    }
+</script>
+
+</body>
+
+</html>

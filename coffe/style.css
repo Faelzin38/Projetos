@@ -1,0 +1,140 @@
+:root {
+    /*variaveis*/
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --branco: #fff;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* quero que todas os textos começem com letra maiúscula */
+    transition: 0.2s linear;
+    /*efeito de transição*/
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+
+}
+
+/* ========NAV BAR========= */
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    /* para fixar o cabeçalho */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    /* para ficar na frente de outros elementos */
+    border-bottom: var(--border);
+
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* para deixar os elementos um ao lado do outro */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--branco);
+
+}
+
+.navbar a:hover {
+    /* para quando o mouse passar por cima */
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+
+}
+
+.icons img {
+    height: 30px;
+    width: 30px;
+    margin: 1rem;
+    cursor: pointer;
+    /* ficar a mão do mouse */
+}
+
+.icons img:hover {
+    width: 35px;
+    height: 35px;
+}
+
+/* ========FINAL NAV BAR========= */
+
+/* ==========HOME============ */
+
+.btn{
+    background: var(--main-color);
+    color: var(--branco);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;  
+    display: inline-block; 
+    border-radius: 2px;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+    /* para aumentar o espaçamento entre as letras */
+    
+}
+
+.home-container{
+    background: url("https://i.ibb.co/KX8pvpC/home-img.jpg");
+    background-size: cover;
+    background-position: center center ;
+    height: 100vh;
+    
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    /* para ocupar a tela toda no mínimo, dependendo do tamanho da tela */
+}
+
+.content{
+    max-width: 60rem;
+}
+
+.content h3{
+    color: var(--branco);
+    font-size: 6rem;
+}
+
+.content p{
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    /* para deixar o texto mais espacado */
+    padding: 1rem 0;
+}
+

@@ -1,0 +1,35 @@
+quote-img : <a href="https://imgbb.com/"><img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="quote-img" border="0"></a>
+pic-1:
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/c23H6vN/pic-1.png" alt="pic-1" border="0"></a>
+
+pic-2: <a href="https://imgbb.com/"><img src="https://i.ibb.co/4JLPK4b/pic-2.png" alt="pic-2" border="0"></a>
+
+pic-3: <a href="https://imgbb.com/"><img src="https://i.ibb.co/3s9j3Y7/pic-3.png" alt="pic-3" border="0"></a>
+
+
+menu-1: <a href="https://imgbb.com/"><img src="https://i.ibb.co/XkGk0YY/menu-1.png" alt="menu-1" border="0"></a>
+
+
+menu-2: <a href="https://imgbb.com/"><img src="https://i.ibb.co/4PvZRWh/menu-2.png" alt="menu-2" border="0"></a>
+
+
+menu-3: <a href="https://imgbb.com/"><img src="https://i.ibb.co/T1KGT8s/menu-3.png" alt="menu-3" border="0"></a>
+
+
+menu-4: <a href="https://imgbb.com/"><img src="https://i.ibb.co/bP461r8/menu-4.png" alt="menu-4" border="0"></a>
+
+
+menu-5: <a href="https://imgbb.com/"><img src="https://i.ibb.co/6NxVCdw/menu-5.png" alt="menu-5" border="0"></a>
+
+
+menu-6: <a href="https://imgbb.com/"><img src="https://i.ibb.co/tb0H4tV/menu-6.png" alt="menu-6" border="0"></a>
+
+
+home-img: <a href="https://ibb.co/wR2FmFD"><img src="https://i.ibb.co/t41TrTy/home-img.jpg" alt="home-img" border="0"></a>
+
+
+logo: <a href="https://imgbb.com/"><img src="https://i.ibb.co/yp84LgK/logo.png" alt="logo" border="0"></a>
+
+
+about-img: <a href="https://ibb.co/fHF45yY"><img src="https://i.ibb.co/M7SM4tD/about-img.jpg" alt="about-img" border="0"></a>
+
