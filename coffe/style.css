@@ -43,6 +43,7 @@ section {
     z-index: 99;
     /* para ficar na frente de outros elementos */
     border-bottom: var(--border);
+    background-color: var(--bg);
 
 }
 
@@ -100,7 +101,7 @@ section {
 }
 
 .btn:hover{
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     /* para aumentar o espaçamento entre as letras */
     
 }
@@ -138,3 +139,116 @@ section {
     padding: 1rem 0;
 }
 
+/* ==========FINAL HOME============ */
+
+/* ==========ABOUT============ */
+
+.title {
+font-size: 4rem;
+color: var(--main-color);
+text-align: center;
+text-transform: uppercase;
+/* tudo letra maiuscula */
+margin-bottom: 4rem;
+}
+
+.title span{
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+.about .row {
+display: flex;
+/* Deixa um do lado do outro */
+align-items: center;
+background-color: var(--black);
+gap: 1.5rem;
+/* pra tirar esse efeito de colado */
+
+}
+
+.about .row .content{
+    padding: 2rem;
+
+}
+
+.about .row .content h3{
+font-size: 3rem;
+color: var(--branco);
+}
+
+.about .row .content p{
+font-size: 1.6rem;
+color: var(--branco);
+padding: 1rem 0;
+line-height: 1.8;
+/* distancia de uma linha para a outra */
+}
+
+/* ==========FINAL ABOUT============ */
+
+/* ==========MENU=========== */
+
+.menu .box-container{
+  display: grid;
+  /* bom para vários itens e voce quer estilizar de forma automática, principalmente se os itens forem aumentar depois de um tempo*/
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+
+.menu .box-container .box img{
+   height: 10rem;
+
+}
+
+
+.menu .box-container .box h3{
+   color: var(--branco);
+   font-size: 2rem;
+   padding: 1rem 0;
+
+}
+
+.menu .box-container .box .price{
+color: var(--branco);
+font-size: 2.5rem;
+padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+font-size: 1.5rem;
+text-decoration: line-through;
+font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background-color: var(--branco);
+
+}
+
+.menu .box-container .box:hover>*{
+   color: var(--black);
+   /* o >* aplica para todos que estão dentro do box */
+}
+
+/* ==========FINAL MENU=========== */
+
+/* ==========CLIENTES=========== */
+
+
+
+/* ==========FINAL CLIENTES=========== */
+
+/* ==========ENDEREÇO=========== */
+
+
+
+/* ==========FINAL ENDEREÇO=========== */
