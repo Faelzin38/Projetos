@@ -189,7 +189,7 @@ line-height: 1.8;
 
 /* ==========MENU=========== */
 
-.menu .box-container{
+ .box-container{
   display: grid;
   /* bom para vários itens e voce quer estilizar de forma automática, principalmente se os itens forem aumentar depois de um tempo*/
 grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -241,14 +241,80 @@ font-weight: lighter;
 
 /* ==========FINAL MENU=========== */
 
-/* ==========CLIENTES=========== */
+/* ==========REVIEW=========== */
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--branco);
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+    
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.review .box-container .box .stars img{
+    height: 30px;
+    width: 30px;
+}
+
+.review .box-container .box h3{
+    color: var(--branco);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* ==========FINAL REVIEW=========== */
+
+/* ==========ADDRESS=========== */
 
 
+.address{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ /* pra deixar tudo um abaixo do outro */
 
-/* ==========FINAL CLIENTES=========== */
+    
+}
 
-/* ==========ENDEREÇO=========== */
+/* ==========FINAL ADDRESS=========== */
 
+/* ==========FOOTER=========== */
 
+.footer{
+    
+    text-align: center;
+   
+}
 
-/* ==========FINAL ENDEREÇO=========== */
+.footer .shere{
+    padding: 1rem 0;
+  
+   
+}
+
+.footer .shere img{
+   margin: 2rem;
+   cursor: pointer;
+   border-radius: 50%;
+   padding: 1rem;
+  
+}
+
+.footer .shere img:hover{
+        background-color: var(--main-color);
+}
+
+/* ==========FINAL FOOTER=========== */
