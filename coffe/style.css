@@ -398,17 +398,17 @@ font-weight: lighter;
         position: absolute;
         top: 100%;
         right: -100%;
-        background-color: rgb(73, 46, 26);
+        background-color: var(--main-color);
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
-
+       
     .navbar.active {
         right: 0;
     }
 
     .navbar a {
-        color: var(--branco);
+        color: var(--black);
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
